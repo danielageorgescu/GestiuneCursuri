@@ -47,7 +47,7 @@ public class DataLoader {
         return studentDetails;
     }
 
-    public static Map<Course, List<Student>> mapData() throws EmptyStringException, IOException, NumberFormatException {
+    public static Map<Course, List<Student>> mapData() throws IOException, NumberFormatException {
         Map<Course, List<Student>> map = new HashMap<>();
         //Cursurile sunt unice. Deci preluam lista de cursuri si introducem in map cate un curs.
         for (Course course : readingCourses()) {
